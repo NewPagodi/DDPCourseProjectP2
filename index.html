@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Daily Nutrition Tracker</title>
+  <meta charset="utf-8">
+  <meta name="description" content="The Daily Nutrition Tracker">
+  <meta name="author" content="New Pagodi">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>The Daily Nutrition Tracker</h1>
+    <h2>A Slidify Presentation</h2>
+    <p>New Pagodi<br/>Data Science Student</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <style>
+  .title-slide {
+    background-image: url("subtle_white_mini_waves.png");
+    
+  }
+</style>
+
+<style>
+.custbg {
+  background-image:url(assets/img/food-carrot.png); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+</style>
+
+<h2>The Problem... And a Solution</h2>
+
+<p>Every day we get evidence about the importance of nutrition for maintaining a healthy body.  But keeping track of the amount nutrition you&#39;re getting from your food can be quite a task.  If only there was a tool that made this job easier.  Now there is:</p>
+
+<p><br></p>
+
+<p><img align="left" src="assets/img/dnt.png"></p>
+
+<h4>Introducing the Daily Nutrition Tracker<br><br></h4>
+
+<p>The daily nutrition tracker is a tool that makes keeping track of the amount of nutrients a person is getting easy.  Before now, this task would involve reading long and confusing nutrition labels.  And manufacturers would often play games with the serving sizes in their products so that even with a nutrition label, a person could still have to do solve a math problem to figure out their nutrient levels.  To complicate things further, some foods, such as fresh foods and vegetables don&#39;t have a label at all.<br><br></p>
+
+<p>Through a simple and familiar web browser interface, The daily nutrition tracker takes care of all of this for you.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Easy to Use, But With Powerful Features</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The Daily Nutrition Tracker lets you track how much of <strong>4 essential nutrients</strong> (Vitamin A, Vitamin C, Calcium, and Iron), you are getting from the foods you eat.</p>
+
+<h4>How To Use the Tracker<br><br></h4>
+
+<p>You use the left panel on the main page to enter the information.  For each food eaten, simply enter the type of food and the amount eaten in grams.  Then press the go button.</p>
+
+<h4>What Information Will Be Shown<br><br></h4>
+
+<p>The information is displayed in the right panel.  As each food is entered, the tracker updates 3 sets of information.  First the tracker will give a chart showing how much recommended daily allowance (RDA) of Vitamin A, Vitamin C, Calcium, and Iron that you have you have taken in.  Second, it will also give the total amounts of these nutrients you have taken in.  Finally, it will give a breakdown of that total for each food.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>How Does It Work ... Simple Math</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>A grapefruit has 1150 IU of vitamin A per 100 grams.  So if a user has eaten 75 grams of grapefruit today, they have gotten:</p>
+
+<pre><code class="r">1150*(75/100)
+</code></pre>
+
+<pre><code>## [1] 862.5
+</code></pre>
+
+<p>IU from the grapefruit.  </p>
+
+<p>Moreover, the current RDA of vitamin A is 3000 IU, so the user has gotten</p>
+
+<pre><code class="r">100*(1150*(75/100))/3000
+</code></pre>
+
+<pre><code>## [1] 28.75
+</code></pre>
+
+<p>percent of their RDA for vitamin A from the grapefruit. </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="custbg" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Room to grow</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><br>
+As great as the Daily Nutrition Tracker already is, there are many more features that could be still be added.  For example, we could:</p>
+
+<ul>
+<li>Add more foods</li>
+<li>Allow foods to be specified in units other than grams</li>
+<li>Track more nutrients</li>
+<li>Add more charts and more features
+
+<ul>
+<li>break down total consumption by carbohydrate, fat, and protein</li>
+<li>break down protein consumption by amino acid to check for completeness.</li>
+</ul></li>
+<li>Allow a user to specify age and weight so that recommended daily allowances can be further customized for the user.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title=''>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Easy to Use, But With Powerful Features'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How Does It Work ... Simple Math'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Room to grow'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
